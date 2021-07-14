@@ -238,10 +238,12 @@ body{
 /* Mobile Devices */
 
 @media only screen and (max-width:688px){
+
+
 .topbar{
-    width: 360px;
+    width: 260px;
     height: 600px;
-    padding-left: 10px;
+    padding-left: 80px;
 }
 
 .section-title{
@@ -253,7 +255,7 @@ body{
 }
 
 .top-img{
-    margin-top: 200px;
+    margin-top: 250px;
     width: 329px;
     height: 259.17px;
 }
@@ -261,7 +263,7 @@ body{
     grid-template-columns: repeat(1, 1fr);
 }
 .players{
-    padding-left: 10px;
+    padding-left: 100px;
     padding-right: 10px;
 }
 
@@ -274,7 +276,7 @@ body{
 }
 
 .highlights {
-    padding: 20px 10px;
+    padding: 20px 100px;
 }
 
 .title {
@@ -299,8 +301,10 @@ body{
 
 .tournament-info, .sponsor {
     margin: 10px;
+    margin-left: 100px;
     width: 225px;
     padding: 30px;
+   
 }
 .t-info{
     flex-direction: column;
@@ -314,11 +318,11 @@ body{
 .ft-img{
     width: 200px;
     height: 80px;
-    padding-right: 60px;
+    padding-right: 30px;
 }
 
 .icons, .cr{
-    padding-right: 40px;
+    padding-right: 5px;
 }
 
 
