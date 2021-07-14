@@ -50,6 +50,43 @@ body{
   display: inline-block;
 }
 
+/* transition. transform */
+
+.photo-detail{
+    display: none;
+}
+
+.photo-detail{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 40px;
+    display: none;
+}
+ 
+.photo-detail h3{
+    background-color: #0C3BAA;
+    color: white;
+    text-align: center;
+}
+
+.photo-detail p{
+    color: #0C3BAA;
+    padding: 50px;
+    font-size: x-large;
+}
+.section-img:hover .photo-detail{
+    display: block;
+    background-color: rgba(199, 180, 134, 0.5);
+}
+
+.section-img:hover .top-img{
+    transform: scale(1.5) skew(30deg);
+    transition: transform 2s ease-in-out;
+}
+
+/* transform end */
+
 .top-img{
     width: 556.01px;
     height: 438px;
@@ -196,3 +233,151 @@ body{
     margin-right: 14px;
 }
 
+/* Media Queries */
+
+/* Mobile Devices */
+
+@media only screen and (max-width:688px){
+.topbar{
+    width: 360px;
+    height: 600px;
+    padding-left: 10px;
+}
+
+.section-title{
+    width: 150px;
+    height: 138px;
+}
+.st{
+    font-size: 40px;
+}
+
+.top-img{
+    margin-top: 200px;
+    width: 329px;
+    height: 259.17px;
+}
+.topbar, .players, .highlights {
+    grid-template-columns: repeat(1, 1fr);
+}
+.players{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.player{
+    width: 250px;
+    overflow: hidden;
+}
+.pl-img{
+    width: 250px;
+}
+
+.highlights {
+    padding: 20px 10px;
+}
+
+.title {
+    color: #18191F;
+    width: 280px;
+    height: 110px;
+    font-size: 30px;
+}
+.summery{
+    width: 280px;
+    
+}
+
+.top-btn{
+    margin-bottom: 20px;
+}
+
+.hl-img {
+    width: 280px;
+    height: 410px;
+}
+
+.tournament-info, .sponsor {
+    margin: 10px;
+    width: 225px;
+    padding: 30px;
+}
+.t-info{
+    flex-direction: column;
+    
+}
+.t-img {
+    width: 250px;
+    height: 200px;
+    margin: 20px;
+}
+.ft-img{
+    width: 200px;
+    height: 80px;
+    padding-right: 60px;
+}
+
+.icons, .cr{
+    padding-right: 40px;
+}
+
+
+}
+
+/* tablet devises */
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    .topbar, .players, .highlights {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .topbar{
+        padding: 10px;
+    }
+
+    .section-title{
+        width: 150px;
+        height: 70px;
+    }
+
+    .st{
+        font-size: 40px;
+    }
+
+    .players{
+        padding-left: 40px;
+    }
+
+    .highlights{
+        padding-left: 40px;
+    }
+    .hdetail{
+        margin-right: 5px;
+    }
+    .title{
+        font-size: 35px;
+        width: 300px;
+    }
+    
+    
+    .summery{
+        width: 300px;
+        font-size: 16px;
+    }
+
+    .hl-img {
+        width: 407px;
+    }
+
+    .tournament-info, .sponsor {
+        margin: 10px;
+        
+        padding: 20px;
+    }
+
+    
+    .t-img {
+        width: 250px;
+        height: 200px;
+        margin: 20px;
+    }
+}
