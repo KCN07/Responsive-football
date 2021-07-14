@@ -123,3 +123,33 @@ body{
     width: 567px;
     height: 427px;
 }
+
+/* footer style */
+.ftr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    height: 213px;
+}
+.ft-img{
+    width: 483.87px;
+    height: 110px;
+}
+.media{
+    border: none;
+}
+
+.fab{
+    
+    background-color:rgb(204, 205, 211);
+    color: gray;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 10px 8px 4px 8px;
+    text-align: center;
+    font-size: x-large;
+    margin-right: 14px;
+}
